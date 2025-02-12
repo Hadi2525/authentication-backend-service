@@ -1,0 +1,55 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure full viewport height */
+html, body {
+  height: 100%;
+}
+
+/* Dark mode: dark background with light text */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #121212;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Centered authentication container */
+.auth-container {
+  text-align: center;
+}
+
+/* Sign In Button styled with Google's blue (#4285F4) */
+#googleSignIn {
+  background-color: #4285F4;
+  border: none;
+  color: #fff;
+  padding: 10px 5px;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  margin-top: 10%;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+#googleSignIn:hover {
+  background-color: #357ae8;
+}
+
+/* Optional: ensure the image displays at the desired size */
+#googleSignIn img {
+  /* Removing display: block; since it's unnecessary in a flex container */
+  width: 7%;
+  height: 7%;
+}

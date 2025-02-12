@@ -1,0 +1,6 @@
+fastapi
+python-dotenv
+uvicorn
+firebase-admin
+jinja2 # template engine
+pydantic-settings
