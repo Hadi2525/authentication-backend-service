@@ -13,7 +13,6 @@ async function getUserId(token) {
             throw new Error('Failed to fetch user ID');
         }
         const data = await response.json();
-        console.log("User ID from backend:", data.id);
     } catch (error) {
         console.error(error);
     }

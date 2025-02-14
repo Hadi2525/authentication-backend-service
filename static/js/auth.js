@@ -27,7 +27,6 @@ document.getElementById('googleSignIn').addEventListener('click', async () => {
     const result = await firebase.auth().signInWithPopup(provider);
     const user = result.user;
     const token = await user.getIdToken();
-    console.log("Firebase ID Token:", token);
 
     // Once authenticated, update the status message with a checkmark
     displayStatus("✔ You are now authenticated!");

@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 import pathlib
 
 # Import your API router
-from router import router
+from app.router import router
 
 # Load the env file (for GOOGLE_APPLICATION_CREDENTIALS, etc.)
 basedir = pathlib.Path(__file__).parents[1]
