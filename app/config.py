@@ -1,15 +1,11 @@
-import pathlib
 from typing import Annotated, Optional
 
-from dotenv import load_dotenv
 from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from firebase_admin.auth import verify_id_token
 
 
-# we need to load the env file because it contains the GOOGLE_APPLICATION_CREDENTIALS
-basedir = pathlib.Path(__file__).parents[1]
-load_dotenv(basedir / ".env")
+
 
 # use of a simple bearer scheme as auth is handled by firebase and not fastapi
 # we set auto_error to False because fastapi incorrectly returns a 403 intead of a 401
